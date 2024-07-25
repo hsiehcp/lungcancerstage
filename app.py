@@ -95,13 +95,9 @@ def determine_stage(t, n, m):
 # Streamlit app
 st.title("Lung Cancer Staging")
 
-# Display the TNM classification
-st.write("### TNM Classification for Lung Cancer (8th edition, 2017):\n")
-for key, values in tnm_classification.items():
-    st.write(f"**{key} Classification:**")
-    for code, description in values.items():
-        st.write(f"- **{code}**: {description}")
-    st.write("")
+# Display the entire content of lungcastage.mkd as formatted markdown
+st.write("### Full Content of lungcastage.mkd:\n")
+st.markdown(file_content)
 
 # Create pulldown menus for T, N, and M values
 t_values = ['TX', 'T0', 'T1a(mi)', 'T1a', 'T1b', 'T1c', 'T2a', 'T2b', 'T3', 'T4']
