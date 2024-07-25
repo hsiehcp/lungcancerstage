@@ -96,7 +96,6 @@ def determine_stage(t, n, m):
 st.title("Lung Cancer Staging")
 
 # Display the entire content of lungcastage.mkd as formatted markdown
-st.write("### Full Content of lungcastage.mkd:\n")
 st.markdown(file_content)
 
 # Create pulldown menus for T, N, and M values
